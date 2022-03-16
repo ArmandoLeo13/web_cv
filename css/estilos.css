@@ -28,6 +28,11 @@ main .descripcion{
     grid-template-areas: "descripcion__ladoA descripcion__ladoB";
     padding: 1rem;
 }
+main .descripcion .descripcion__ladoA{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 .bienvenido__caja{
     padding: 1rem;
     text-align: center;
@@ -81,45 +86,12 @@ main .descripcion{
     list-style-type: none;
 }
 
-
-.formulario{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "contacto"
-    "consulta";
-    position: relative;
-
-}
-.formulario__caja{
-    width: 50%;
-    position: absolute;
-    margin-left: 30%;
-    margin-top: 10%;
-    font-size: 20px;
-}
-.formulario__caja .contacto, .formulario__caja .consulta{
-    border: 4px solid #3e5f8a;
-    border-radius: 8px;
-    padding: 1rem;
-    font-weight: 400;
-}
-.formulario__caja .contacto legend, .formulario__caja .consulta legend{
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
+.footer .textoFooter{
+    padding-top: 1rem;
 }
 
-.consulta .consulta__texto{
-    width: 100%;
-    min-height: 100px;
-}
-.formulario__caja .botones button{
-    border: none;
-    border-radius: 4px;
-    background-color: rgb(0, 66, 173);
-    color: white;
+#formu{
+    margin: 4rem 2rem;
 }
 .nav__listaHeader--activo {
     background-color: rgb(0, 66, 173);
@@ -161,10 +133,9 @@ main .descripcion{
     }
     main .descripcion{
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: "descripcion__ladoA"
-        "descripcion__ladoB";
+        grid-template-areas: "descripcion__ladoA";
         padding: 1rem;
     }
     .bienvenido__caja h1{
@@ -191,8 +162,7 @@ main .descripcion{
         padding-top: 1rem;
     }
     .descripcion__ladoB img{
-        width: 100%;
-        height: 70%;
+        display: none;
     }
     .footer{
         font-size: 10px;
@@ -202,27 +172,8 @@ main .descripcion{
         color: rgb(0, 66, 173);
         border-radius: 5px;
     }
-    .formulario{
-        width: 100%;
-        height: 100vh;
-    }
-    .formulario__caja{
-        width: 100%;
-        margin: 0;
-        padding-top: 25%;
-    }
-    
-    .formulario__caja .contacto legend, .formulario__caja .consulta legend{
-        font-size: 20px;
-        text-align: center;
-        font-weight: bold;
-    }
     .listaHeader__item--oculto{
         display: block;
-    }
-
-    .camposFormulario{
-        font-size: 15px;
     }
 
     /* Tablet */
