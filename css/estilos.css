@@ -104,6 +104,10 @@ main .descripcion .descripcion__ladoA{
 .listaHeader__item--oculto{
     display: none;
 }
+.skills {
+    margin-left: 25%;
+    max-width: 60%;
+}
 
 /* Movil */
 @media screen and (max-width: 600px){
