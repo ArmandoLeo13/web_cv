@@ -104,9 +104,8 @@ main .descripcion .descripcion__ladoA{
 .listaHeader__item--oculto{
     display: none;
 }
-.skills {
-    margin-left: 25%;
-    max-width: 60%;
+#tarjeta--oculta{
+    display: none;
 }
 
 /* Movil */
@@ -177,6 +176,9 @@ main .descripcion .descripcion__ladoA{
         border-radius: 5px;
     }
     .listaHeader__item--oculto{
+        display: block;
+    }
+    #tarjeta--oculta{
         display: block;
     }
 
