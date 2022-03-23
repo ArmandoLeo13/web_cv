@@ -1,0 +1,74 @@
+.descripcion{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "descripcion__ladoA descripcion__ladoB";
+    padding: 1rem;
+
+    &__ladoA{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 35px;
+            text-align: center;
+            padding-top: 1rem;
+        }
+    }
+    &__ladoB{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 60%;
+            height: 70%;
+        }
+    }
+}
+.bienvenido__caja{
+    padding: 1rem;
+    text-align: center;
+    h1 {
+        font-size: 100px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 50px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 2rem;
+        padding-top: 1rem;
+    }
+}
+
+.listaHeader {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    list-style-type: none;
+
+    &__item--oculto{
+        display: none;
+    }
+}
+#formu{
+    margin: 4rem 2rem;
+}
+.nav__listaHeader--activo {
+    background-color: rgb(0, 66, 173);
+    color: #fff;
+    border-radius: 5px;
+}
+.btn-open-sidebar{
+    display: none;
+}
+#tarjeta--oculta{
+    display: none;
+}
