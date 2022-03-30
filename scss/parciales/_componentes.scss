@@ -1,3 +1,9 @@
+$colores: (
+    color1: rgb(0, 66, 173),
+    color2: rgba(0, 66, 173,0.8),
+    color3: #fff
+);
+
 .descripcion{
     display: grid;
     grid-template-rows: 1fr;
@@ -62,8 +68,8 @@
     margin: 4rem 2rem;
 }
 .nav__listaHeader--activo {
-    background-color: rgb(0, 66, 173);
-    color: #fff;
+    background-color: map-get($colores,color1);
+    color: map-get($colores,color3);
     border-radius: 5px;
 }
 .btn-open-sidebar{
