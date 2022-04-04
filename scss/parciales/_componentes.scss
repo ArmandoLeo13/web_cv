@@ -1,6 +1,6 @@
 $colores: (
     color1: rgb(0, 66, 173),
-    color2: rgba(0, 66, 173,0.8),
+    color2: rgba(0, 66, 173,0.3),
     color3: #fff
 );
 
@@ -76,5 +76,14 @@ $colores: (
     display: none;
 }
 #tarjeta--oculta{
+    display: none;
+}
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#tarjeta--oculta1, #tarjeta--oculta2, #tarjeta--oculta3{
     display: none;
 }

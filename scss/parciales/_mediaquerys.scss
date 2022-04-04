@@ -72,8 +72,14 @@
     .listaHeader__item--oculto{
         display: block;
     }
-    #tarjeta--oculta{
+    #tarjeta--oculta1, #tarjeta--oculta2, #tarjeta--oculta3{
         display: block;
+    }
+    .col-8{
+        width: 100vw;
+    }
+    .skills {
+        display: none;
     }
 }
     /* Tablet */
