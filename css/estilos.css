@@ -21,6 +21,15 @@ nav {
   font-weight: bold;
   color: black; }
 
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  max-height: 80px; }
+
 .descripcion {
   display: grid;
   grid-template-rows: 1fr;
@@ -159,7 +168,9 @@ nav {
   .col-8 {
     width: 100vw; }
   .skills {
-    display: none; } }
+    display: none; }
+  .header {
+    flex-direction: row-reverse; } }
 
 /* Tablet */
 @media screen and (max-width: 786px) and (min-height: 600px) {

@@ -21,7 +21,15 @@ nav {
     font-weight: bold;
     color: black;
 }
-
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    max-height: 80px;
+}
 
 
 
