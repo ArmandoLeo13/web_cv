@@ -1,6 +1,6 @@
 $colores: (
     color1: rgb(0, 66, 173),
-    color2: rgba(0, 66, 173,0.3),
+    color2: rgba(0, 66, 173,0.6),
     color3: #fff
 );
 
@@ -67,10 +67,16 @@ $colores: (
 #formu{
     margin: 4rem 2rem;
 }
-.nav__listaHeader--activo {
+.nav__listaHeader{
     background-color: map-get($colores,color1);
     color: map-get($colores,color3);
     border-radius: 5px;
+
+    &--activo {
+        background-color: map-get($colores,color3);
+        color: map-get($colores,color1);
+        border-radius: 5px;
+    }
 }
 .btn-open-sidebar{
     display: none;
@@ -86,4 +92,17 @@ $colores: (
 }
 #tarjeta--oculta1, #tarjeta--oculta2, #tarjeta--oculta3{
     display: none;
+}
+#carouselExampleCaptions{
+    width: 90vw;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.btn-close-sidebar{
+    background-color: map-get($colores,color1);
+    color: map-get($colores,color3);
+    border-radius: 5px;
 }

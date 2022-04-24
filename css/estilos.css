@@ -12,14 +12,15 @@ main {
   min-height: 100vh; }
 
 header, footer {
-  background-image: url(../images/banner-header-tapete-1452530223iqL.jpg); }
+  background-image: url(../images/banner-header-tapete-1452530223iqL.jpg);
+  color: #ffff; }
 
 nav {
   font-family: 'Source Code Pro', monospace;
   font-size: 20px;
   padding: 1rem;
   font-weight: bold;
-  color: black; }
+  color: #ffff; }
 
 .header {
   display: flex;
@@ -79,10 +80,14 @@ nav {
 #formu {
   margin: 4rem 2rem; }
 
-.nav__listaHeader--activo {
+.nav__listaHeader {
   background-color: #0042ad;
   color: #fff;
   border-radius: 5px; }
+  .nav__listaHeader--activo {
+    background-color: #fff;
+    color: #0042ad;
+    border-radius: 5px; }
 
 .btn-open-sidebar {
   display: none; }
@@ -98,6 +103,19 @@ nav {
 
 #tarjeta--oculta1, #tarjeta--oculta2, #tarjeta--oculta3 {
   display: none; }
+
+#carouselExampleCaptions {
+  width: 90vw; }
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.btn-close-sidebar {
+  background-color: #0042ad;
+  color: #fff;
+  border-radius: 5px; }
 
 .footer {
   font-family: 'Source Code Pro', monospace;
@@ -116,7 +134,7 @@ nav {
     background-color: #0042ad;
     color: #fff; }
   .listaHeader {
-    background-color: rgba(0, 66, 173, 0.3);
+    background-color: rgba(0, 66, 173, 0.6);
     width: 80%;
     max-width: 400px;
     height: 100vh;
